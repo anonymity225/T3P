@@ -85,12 +85,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Low-bitrate speech coding plays an essential role in speech transmission and storage. However, speech quality degrades noticeably at low bitrates with current coding methods. 
-            Therefore, this paper proposes a novel Token-Prediction-based Post-Processing (T3P) model to enhance the quality of low-bitrate coded speech. 
-            Unlike existing post-processing methods, T3P is a discrete-domain method centered on the prediction and classification of discrete tokens.
-            Specifically, given low-bitrate coded speech as condition, T3P initiates from a random token and sequentially predicts the token sequences produced by a residual vector quantization (RVQ) based neural codec, which is subsequently decoded to reconstruct the raw speech. 
-            Experiments confirm that T3P surpasses flow-matching-based and speech-enhancement-based baselines, achieving a better trade-off between speech quality and efficiency.
-            Empowered by T3P, Encodec achieves performance at just 500 bps that exceeds its original 4 kbps results for 16 kHz speech coding.
+            Low-bitrate speech coding plays an essential role in speech transmission and storage. 
+            However, speech quality degrades noticeably at low bitrates with current coding methods.
+            Therefore, this paper proposes a novel Token-Prediction-based Post-Processing (T3P) model to improve the quality of low-bitrate coded speech. Unlike existing post-processing methods, T3P is a discrete-domain method centered on the prediction and classification of discrete tokens. 
+            Specifically, given low-bitrate coded speech features as condition, T3P initiates from a random token and sequentially predicts the token sequences produced by a residual vector quantization (RVQ) based neural codec,
+            which is subsequently decoded to reconstruct the raw speech. 
+            Experiments confirm that T3P surpasses flow-matching-based and speech-enhancement-based baselines, achieving a better trade-off between speech quality and efficiency. 
+            Empowered by T3P, Encodec achieves performance at just 0.5 kbps that exceeds its original 4 kbps results for 16 kHz speech coding.
           </p>
         </div>
       </div>
@@ -104,7 +105,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-centered">
-        <h2 class="title is-3">I. Opus</h2>
+        <h2 class="title is-3">I. Opus (LibriTTS, 16kHz)</h2>
       </div>
     </div>
   </div>
@@ -121,8 +122,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
       <td style="text-align: center;"><b>Opus@6kbps</b></th>
-      <td style="text-align: center;"><b>Opus+T3P</b></th>
-      <td style="text-align: center;"><b>Opus+SpeechFlow-R</b></th>
+      <td style="text-align: center;"><b>Opus+T3P@6kbps</b></th>
+      <td style="text-align: center;"><b>Opus+SpeechFlow-R@6kbps</b></th>
       <td style="text-align: center;"><b>Opus@10kbps</b></th>
       <td style="text-align: center;"><b>Opus@20kbps</b></th>
       <td style="text-align: center;"><b>Opus@30kbps</b></th>
@@ -152,8 +153,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
       <td style="text-align: center;"><b>Opus@6kbps</b></th>
-      <td style="text-align: center;"><b>Opus+T3P</b></th>
-      <td style="text-align: center;"><b>Opus+SpeechFlow-R</b></th>
+      <td style="text-align: center;"><b>Opus+T3P@6kbps</b></th>
+      <td style="text-align: center;"><b>Opus+SpeechFlow-R@6kbps</b></th>
       <td style="text-align: center;"><b>Opus@10kbps</b></th>
       <td style="text-align: center;"><b>Opus@20kbps</b></th>
       <td style="text-align: center;"><b>Opus@30kbps</b></th>
@@ -182,8 +183,8 @@
       <tr>
         <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>Opus@6kbps</b></th>
-        <td style="text-align: center;"><b>Opus+T3P</b></th>
-        <td style="text-align: center;"><b>Opus+SpeechFlow-R</b></th>
+        <td style="text-align: center;"><b>Opus+T3P@6kbps</b></th>
+        <td style="text-align: center;"><b>Opus+SpeechFlow-R@6kbps</b></th>
         <td style="text-align: center;"><b>Opus@10kbps</b></th>
         <td style="text-align: center;"><b>Opus@20kbps</b></th>
         <td style="text-align: center;"><b>Opus@30kbps</b></th>
@@ -212,8 +213,8 @@
         <tr>
           <td style="text-align: center;"><b>Raw Speech</b></th>
           <td style="text-align: center;"><b>Opus@6kbps</b></th>
-          <td style="text-align: center;"><b>Opus+T3P</b></th>
-          <td style="text-align: center;"><b>Opus+SpeechFlow-R</b></th>
+          <td style="text-align: center;"><b>Opus+T3P@6kbps</b></th>
+          <td style="text-align: center;"><b>Opus+SpeechFlow-R@6kbps</b></th>
           <td style="text-align: center;"><b>Opus@10kbps</b></th>
           <td style="text-align: center;"><b>Opus@20kbps</b></th>
           <td style="text-align: center;"><b>Opus@30kbps</b></th>
@@ -242,8 +243,8 @@
         <tr>
           <td style="text-align: center;"><b>Raw Speech</b></th>
           <td style="text-align: center;"><b>Opus@6kbps</b></th>
-          <td style="text-align: center;"><b>Opus+T3P</b></th>
-          <td style="text-align: center;"><b>Opus+SpeechFlow-R</b></th>
+          <td style="text-align: center;"><b>Opus+T3P@6kbps</b></th>
+          <td style="text-align: center;"><b>Opus+SpeechFlow-R@6kbps</b></th>
           <td style="text-align: center;"><b>Opus@10kbps</b></th>
           <td style="text-align: center;"><b>Opus@20kbps</b></th>
           <td style="text-align: center;"><b>Opus@30kbps</b></th>
@@ -266,7 +267,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-centered">
-        <h2 class="title is-3">II. Encodec</h2>
+        <h2 class="title is-3">II. Encodec (LibriTTS, 16kHz)</h2>
       </div>
     </div>
   </div>
@@ -284,8 +285,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
       <td style="text-align: center;"><b>Encodec@0.5kbps</b></th>
-      <td style="text-align: center;"><b>Encodec+T3P</b></th>
-      <td style="text-align: center;"><b>Encodec+SpeechFlow-R</b></th>
+      <td style="text-align: center;"><b>Encodec+T3P@0.5kbps</b></th>
+      <td style="text-align: center;"><b>Encodec+SpeechFlow-R@0.5kbps</b></th>
       <td style="text-align: center;"><b>Encodec@1kbps</b></th>
       <td style="text-align: center;"><b>Encodec@2kbps</b></th>
       <td style="text-align: center;"><b>Encodec@4kbps</b></th>
@@ -316,8 +317,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
       <td style="text-align: center;"><b>Encodec@0.5kbps</b></th>
-      <td style="text-align: center;"><b>Encodec+T3P</b></th>
-      <td style="text-align: center;"><b>Encodec+SpeechFlow-R</b></th>
+      <td style="text-align: center;"><b>Encodec+T3P@0.5kbps</b></th>
+      <td style="text-align: center;"><b>Encodec+SpeechFlow-R@0.5kbps</b></th>
       <td style="text-align: center;"><b>Encodec@1kbps</b></th>
       <td style="text-align: center;"><b>Encodec@2kbps</b></th>
       <td style="text-align: center;"><b>Encodec@4kbps</b></th>
@@ -348,8 +349,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>Encodec@0.5kbps</b></th>
-        <td style="text-align: center;"><b>Encodec+T3P</b></th>
-        <td style="text-align: center;"><b>Encodec+SpeechFlow-R</b></th>
+        <td style="text-align: center;"><b>Encodec+T3P@0.5kbps</b></th>
+        <td style="text-align: center;"><b>Encodec+SpeechFlow-R@0.5kbps</b></th>
         <td style="text-align: center;"><b>Encodec@1kbps</b></th>
         <td style="text-align: center;"><b>Encodec@2kbps</b></th>
         <td style="text-align: center;"><b>Encodec@4kbps</b></th>
@@ -381,8 +382,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>Encodec@0.5kbps</b></th>
-        <td style="text-align: center;"><b>Encodec+T3P</b></th>
-        <td style="text-align: center;"><b>Encodec+SpeechFlow-R</b></th>
+        <td style="text-align: center;"><b>Encodec+T3P@0.5kbps</b></th>
+        <td style="text-align: center;"><b>Encodec+SpeechFlow-R@0.5kbps</b></th>
         <td style="text-align: center;"><b>Encodec@1kbps</b></th>
         <td style="text-align: center;"><b>Encodec@2kbps</b></th>
         <td style="text-align: center;"><b>Encodec@4kbps</b></th>
@@ -414,8 +415,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>Encodec@0.5kbps</b></th>
-        <td style="text-align: center;"><b>Encodec+T3P</b></th>
-        <td style="text-align: center;"><b>Encodec+SpeechFlow-R</b></th>
+        <td style="text-align: center;"><b>Encodec+T3P@0.5kbps</b></th>
+        <td style="text-align: center;"><b>Encodec+SpeechFlow-R@0.5kbps</b></th>
         <td style="text-align: center;"><b>Encodec@1kbps</b></th>
         <td style="text-align: center;"><b>Encodec@2kbps</b></th>
         <td style="text-align: center;"><b>Encodec@4kbps</b></th>
@@ -438,7 +439,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-centered">
-        <h2 class="title is-3">III. APCodec</h2>
+        <h2 class="title is-3">III. APCodec (VCTK, 48kHz)</h2>
       </div>
     </div>
   </div>
@@ -455,8 +456,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>APCodec@1.5kbps</b></th>
-        <td style="text-align: center;"><b>APCodec+T3P</b></th>
-        <td style="text-align: center;"><b>APCodec+MP-SENet</b></th>
+        <td style="text-align: center;"><b>APCodec+T3P@1.5kbps</b></th>
+        <td style="text-align: center;"><b>APCodec+MP-SENet@1.5kbps</b></th>
         <td style="text-align: center;"><b>APCodec@3kbps</b></th>
         <td style="text-align: center;"><b>APCodec@6kbps</b></th>
         <td style="text-align: center;"><b>APCodec@12kbps</b></th>
@@ -484,8 +485,8 @@
       <tr>
         <td style="text-align: center;"><b>Raw Speech</b></th>
           <td style="text-align: center;"><b>APCodec@1.5kbps</b></th>
-          <td style="text-align: center;"><b>APCodec+T3P</b></th>
-          <td style="text-align: center;"><b>APCodec+MP-SENet</b></th>
+          <td style="text-align: center;"><b>APCodec+T3P@1.5kbps</b></th>
+          <td style="text-align: center;"><b>APCodec+MP-SENet@1.5kbps</b></th>
           <td style="text-align: center;"><b>APCodec@3kbps</b></th>
           <td style="text-align: center;"><b>APCodec@6kbps</b></th>
           <td style="text-align: center;"><b>APCodec@12kbps</b></th>
@@ -513,8 +514,8 @@
         <tr>
           <td style="text-align: center;"><b>Raw Speech</b></th>
             <td style="text-align: center;"><b>APCodec@1.5kbps</b></th>
-            <td style="text-align: center;"><b>APCodec+T3P</b></th>
-            <td style="text-align: center;"><b>APCodec+MP-SENet</b></th>
+            <td style="text-align: center;"><b>APCodec+T3P@1.5kbps</b></th>
+            <td style="text-align: center;"><b>APCodec+MP-SENet@1.5kbps</b></th>
             <td style="text-align: center;"><b>APCodec@3kbps</b></th>
             <td style="text-align: center;"><b>APCodec@6kbps</b></th>
             <td style="text-align: center;"><b>APCodec@12kbps</b></th>
@@ -542,8 +543,8 @@
           <tr>
             <td style="text-align: center;"><b>Raw Speech</b></th>
               <td style="text-align: center;"><b>APCodec@1.5kbps</b></th>
-              <td style="text-align: center;"><b>APCodec+T3P</b></th>
-              <td style="text-align: center;"><b>APCodec+MP-SENet</b></th>
+              <td style="text-align: center;"><b>APCodec+T3P@1.5kbps</b></th>
+              <td style="text-align: center;"><b>APCodec+MP-SENet@1.5kbps</b></th>
               <td style="text-align: center;"><b>APCodec@3kbps</b></th>
               <td style="text-align: center;"><b>APCodec@6kbps</b></th>
               <td style="text-align: center;"><b>APCodec@12kbps</b></th>
@@ -571,8 +572,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>APCodec@1.5kbps</b></th>
-        <td style="text-align: center;"><b>APCodec+T3P</b></th>
-        <td style="text-align: center;"><b>APCodec+MP-SENet</b></th>
+        <td style="text-align: center;"><b>APCodec+T3P@1.5kbps</b></th>
+        <td style="text-align: center;"><b>APCodec+MP-SENet@1.5kbps</b></th>
         <td style="text-align: center;"><b>APCodec@3kbps</b></th>
         <td style="text-align: center;"><b>APCodec@6kbps</b></th>
         <td style="text-align: center;"><b>APCodec@12kbps</b></th>
@@ -594,7 +595,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-centered">
-        <h2 class="title is-3">IV. DAC</h2>
+        <h2 class="title is-3">IV. DAC (VCTK, 48kHz)</h2>
       </div>
     </div>
   </div>
@@ -611,8 +612,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>DAC@1.5kbps</b></th>
-        <td style="text-align: center;"><b>DAC+T3P</b></th>
-        <td style="text-align: center;"><b>DAC+MP-SENet</b></th>
+        <td style="text-align: center;"><b>DAC+T3P@1.5kbps</b></th>
+        <td style="text-align: center;"><b>DAC+MP-SENet@1.5kbps</b></th>
         <td style="text-align: center;"><b>DAC@3kbps</b></th>
         <td style="text-align: center;"><b>DAC@6kbps</b></th>
         <td style="text-align: center;"><b>DAC@12kbps</b></th>
@@ -640,8 +641,8 @@
       <tr>
         <td style="text-align: center;"><b>Raw Speech</b></th>
           <td style="text-align: center;"><b>DAC@1.5kbps</b></th>
-          <td style="text-align: center;"><b>DAC+T3P</b></th>
-          <td style="text-align: center;"><b>DAC+MP-SENet</b></th>
+          <td style="text-align: center;"><b>DAC+T3P@1.5kbps</b></th>
+          <td style="text-align: center;"><b>DAC+MP-SENet@1.5kbps</b></th>
           <td style="text-align: center;"><b>DAC@3kbps</b></th>
           <td style="text-align: center;"><b>DAC@6kbps</b></th>
           <td style="text-align: center;"><b>DAC@12kbps</b></th>
@@ -669,8 +670,8 @@
         <tr>
           <td style="text-align: center;"><b>Raw Speech</b></th>
             <td style="text-align: center;"><b>DAC@1.5kbps</b></th>
-            <td style="text-align: center;"><b>DAC+T3P</b></th>
-            <td style="text-align: center;"><b>DAC+MP-SENet</b></th>
+            <td style="text-align: center;"><b>DAC+T3P@1.5kbps</b></th>
+            <td style="text-align: center;"><b>DAC+MP-SENet@1.5kbps</b></th>
             <td style="text-align: center;"><b>DAC@3kbps</b></th>
             <td style="text-align: center;"><b>DAC@6kbps</b></th>
             <td style="text-align: center;"><b>DAC@12kbps</b></th>
@@ -698,8 +699,8 @@
           <tr>
             <td style="text-align: center;"><b>Raw Speech</b></th>
               <td style="text-align: center;"><b>DAC@1.5kbps</b></th>
-              <td style="text-align: center;"><b>DAC+T3P</b></th>
-              <td style="text-align: center;"><b>DAC+MP-SENet</b></th>
+              <td style="text-align: center;"><b>DAC+T3P@1.5kbps</b></th>
+              <td style="text-align: center;"><b>DAC+MP-SENet@1.5kbps</b></th>
               <td style="text-align: center;"><b>DAC@3kbps</b></th>
               <td style="text-align: center;"><b>DAC@6kbps</b></th>
               <td style="text-align: center;"><b>DAC@12kbps</b></th>
@@ -727,8 +728,8 @@
     <tr>
       <td style="text-align: center;"><b>Raw Speech</b></th>
         <td style="text-align: center;"><b>DAC@1.5kbps</b></th>
-        <td style="text-align: center;"><b>DAC+T3P</b></th>
-        <td style="text-align: center;"><b>DAC+MP-SENet</b></th>
+        <td style="text-align: center;"><b>DAC+T3P@1.5kbps</b></th>
+        <td style="text-align: center;"><b>DAC+MP-SENet@1.5kbps</b></th>
         <td style="text-align: center;"><b>DAC@3kbps</b></th>
         <td style="text-align: center;"><b>DAC@6kbps</b></th>
         <td style="text-align: center;"><b>DAC@12kbps</b></th>
